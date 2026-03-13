@@ -29,7 +29,7 @@ print(f" {person_name.title()}")
 print('Napoleon Bonaparte - "Impossible is a word to be found only in the dictionary of fools"')
 print()
 
-
+# ---------------------------------------------------------------------------------
 # 2-6. Famous Quote 2:
 # Store the famous person's name in a variable
 famous_person = "Napoleon Bonaparte"
