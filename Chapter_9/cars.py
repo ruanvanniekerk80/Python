@@ -3,29 +3,30 @@ class Car:
 
     def __init__(self, make, model, year):
         """Initialize attributes to describe a car."""
-        self.make = make  
-        self.model = model  
-        self.year = year  
+        self.make = make
+        self.model = model
+        self.year = year
         self.odometer_reading = 0   # Initial mileage is set to 0
 
     def get_descriptive_name(self):
         """Return a neatly formatted descriptive name."""
-        long_name = f"{self.year} {self.make} {self.model}"  
+        long_name = f"{self.year} {self.make} {self.model}"
         return long_name.title()    # Return the name with proper capitalization
 
     def read_odometer(self):
         """Print a statement showing the current car's mileage."""
-        print(f"This car has {self.odometer_reading} miles on it.")  
+        print(f"This car has {self.odometer_reading} miles on it.")
 
     def update_odometer(self, mileage):
         """
         Set the odometer reading to the given value.
         Reject the change if it attempts to roll the odometer back.
         """
-        if mileage >= self.odometer_reading: # Ensure mileage is not less than current reading
+        if mileage >= self.odometer_reading:  # Ensure mileage is not less than current reading
             self.odometer_reading = mileage  # Update the mileage
         else:
-            print("You can't roll back an odometer!")  # Prevent rolling back the odometer
+            # Prevent rolling back the odometer
+            print("You can't roll back an odometer!")
 
     def increment_odometer(self, miles):
         """Add the given amount to the odometer reading."""
@@ -34,12 +35,14 @@ class Car:
 
 # Example of creating a different car and using the methods
 
-my_used_car = Car('toyota', 'corolla', 2015)# Create a new used car instance
+my_used_car = Car('toyota', 'corolla', 2015)  # Create a new used car instance
 print(my_used_car.get_descriptive_name())   # Displays the car's name
 
-my_used_car.update_odometer(45_000)         # Set the initial mileage to 45,000 miles
-my_used_car.read_odometer()                 # Displays the current mileage of the used car
+# Set the initial mileage to 45,000 miles
+my_used_car.update_odometer(45_000)
+# Displays the current mileage of the used car
+my_used_car.read_odometer()
 
 my_used_car.increment_odometer(200)         # Add 200 miles to the odometer
-my_used_car.read_odometer()                 # Displays the updated mileage after incrementing
-
+# Displays the updated mileage after incrementing
+my_used_car.read_odometer()
