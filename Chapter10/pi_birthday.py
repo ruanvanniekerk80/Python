@@ -1,6 +1,6 @@
 from pathlib import Path
 
-path = Path('pi_million_digits.txt')
+path = Path('/Users/ruan.vanniekerk/Desktop/Code College/VSCode/Python/Chapter10/pi_million_digits.txt')
 contents = path.read_text()
 lines = contents.splitlines()
 
@@ -14,3 +14,4 @@ if birthday in pi_string:
     print("Your birthday appears in the first million digits of pi!")
 else:
     print("Your birthday does not appear in the first million digits of pi.")
+    

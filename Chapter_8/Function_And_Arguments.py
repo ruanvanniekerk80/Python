@@ -6,8 +6,8 @@ def greet(name, age):
 
 
 # Passing information to the function
-greet('Alice', 30)
-greet('Bob', 25)
+greet("Alice", 30)
+greet("Bob", 25)
 
 ################################################################################################
 # The code defines a function create_account(username, password, email) that accepts three parameters:
@@ -22,10 +22,10 @@ def create_account(username, password, email):
 
 
 # Correct order:
-create_account('john_doe', 'mypassword', 'john@example.com')
+create_account("john_doe", "mypassword", "john@example.com")
 
 # Incorrect order:
-create_account('mypassword', 'john_doe', 'john@example.com')
+create_account("mypassword", "john_doe", "john@example.com")
 
 ################################################################################################
 # The function register_product(product_name, product_type, price) is defined to accept three parameters:
@@ -39,21 +39,19 @@ def register_product(product_name, product_type, price):
 
 
 # Using positional arguments
-register_product('Laptop', 'Electronics', 999.99)
+register_product("Laptop", "Electronics", 999.99)
 
 # Using keyword arguments (order doesn't matter)
-register_product(product_name='Laptop',
-                 product_type='Electronics', price=999.99)
+register_product(product_name="Laptop", product_type="Electronics", price=999.99)
 
 # Changing the order with keyword arguments
-register_product(price=999.99, product_type='Electronics',
-                 product_name='Laptop')
+register_product(price=999.99, product_type="Electronics", product_name="Laptop")
 
 #############################################################################################
 # This code defines a function called sandwich that takes two parameters: bread_type and filling. Both parameters have default values
 
 
-def sandwich(bread_type='whole wheat', filling='ham'):
+def sandwich(bread_type="whole wheat", filling="ham"):
     print(f"\nMaking a {bread_type} sandwich with {filling}.")
 
 
@@ -61,10 +59,10 @@ def sandwich(bread_type='whole wheat', filling='ham'):
 sandwich()
 
 # Providing custom values
-sandwich(bread_type='sourdough', filling='turkey')
+sandwich(bread_type="sourdough", filling="turkey")
 
 # Using keyword arguments and changing the order
-sandwich(filling='cheese', bread_type='rye')
+sandwich(filling="cheese", bread_type="rye")
 
 ####################################################################################
 # This code defines a function called register_user that takes three parameters, username, age, email
@@ -77,7 +75,7 @@ def register_user(username, age, email):
 
 
 # Correct function call
-register_user('john_doe', 25, 'john@example.com')
+register_user("john_doe", 25, "john@example.com")
 
 # Missing arguments (will raise an error)
 # register_user('jane_doe')  # Uncommenting this line will raise an error

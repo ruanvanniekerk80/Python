@@ -1,8 +1,9 @@
-#Working with a File’s Contents
+# Working with a File’s Contents
 from pathlib import Path
 
 # Define the path to the file
-path = Path('pi_digits.txt')
+path = Path(
+    '/Users/ruan.vanniekerk/Desktop/Code College/VSCode/Python/Chapter10/pi_digits.txt')
 
 # Read the entire contents of the file
 contents = path.read_text()

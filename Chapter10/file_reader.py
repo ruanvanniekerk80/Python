@@ -2,7 +2,8 @@
 from pathlib import Path
 
 # Define the path to the file inside the 'text_files' folder
-path = Path('pi_digits.txt')
+path = Path(
+    '/Users/ruan.vanniekerk/Desktop/Code College/VSCode/Python/Chapter10/pi_digits.txt')
 
 # Read the entire contents of the file and remove trailing whitespace
 contents = path.read_text().rstrip()
@@ -13,4 +14,3 @@ lines = contents.splitlines()
 # Access and print each line
 for line in lines:
     print(line)
-

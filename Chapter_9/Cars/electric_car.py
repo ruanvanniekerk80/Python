@@ -29,3 +29,4 @@ class ElectricCar(Car):  # ElectricCar class inherits from Car class
         """Initialize attributes of the parent class."""
         super().__init__(make, model, year)
         self.battery = Battery()  # Create a Battery instance as an attribute
+        
