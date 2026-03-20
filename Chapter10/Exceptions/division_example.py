@@ -25,9 +25,19 @@ while True:
     print(answer)
 
 #Page 194:
-    # try:
-    #     answer = int(first_number) / int(second_number)  # Try to divide the numbers
-    # except ZeroDivisionError:                            # Handle the error 
-    #     print("You can't divide by 0!")  
-    # else:
-    #     print(answer)  # Print the result of the division if no error occurred
+    try:
+        answer = int(first_number) / int(second_number)  # Try to divide the numbers
+    except ZeroDivisionError:                            # Handle the error 
+        print("You can't divide by 0!")  
+    else:
+        print(answer)  # Print the result of the division if no error occurred
+
+#Lesedi's Code
+
+try:
+    answer = 10/2 # Try to divide the numbers\
+    print(answer)
+except ZeroDivisionError:                            # Handle the error 
+    print("You can't divide by 0!")
+else:
+    print(answer)

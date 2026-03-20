@@ -3,7 +3,8 @@
 from pathlib import Path
 
 # Define the path to the file 'alice.txt'
-path = Path('/Exceptions/alice.txt')
+path = Path('/Users/ruan.vanniekerk/Desktop/Code College/VSCode/Python/Chapter10/Exceptions/' 
+'alice.txt')
 
 # Attempt to read the contents of the file
 try:
