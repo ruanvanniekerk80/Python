@@ -65,4 +65,4 @@ print()
 # A list comprehension combines the for loop and the creation of new elements into one line
 # Note: Changed 'for number' to 'for number_cubes' to match the expression
 cubes = [number_cubes ** 3 for number_cubes in range(1, 11)]
-print(cubes)
+print(cubes)  
