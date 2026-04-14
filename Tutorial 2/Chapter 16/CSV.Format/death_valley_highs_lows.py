@@ -3,7 +3,7 @@ import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-path = Path('CSV.Format/weather_data/death_valley_2021_simple.csv')
+path = Path('/Users/ruan.vanniekerk/Desktop/Code College/VSCode/Python/Tutorial 2/Chapter 16/CSV.Format/weather_data/death_valley_2021_simple.csv')
 
 lines = path.read_text().splitlines()
 reader = csv.reader(lines)
@@ -40,4 +40,3 @@ ax.set_ylabel("Temperature (F)", fontsize=16)
 ax.tick_params(labelsize=16)
 
 plt.show()
-
